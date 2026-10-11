@@ -1,0 +1,115 @@
+/* 1. Сброс размеров бокса */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Базовые настройки страницы */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* 3. Шапка и подвал */
+header, footer {
+    background: #0f172a;
+    color: #f8fafc;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* 4. Навигация */
+nav {
+    background: #1e293b;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #f1f5f9;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 5. Основное содержимое */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+/* 6. Карточки (сетка) */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* 7. Кнопки */
+.button {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+/* 8. Подвал */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* 9. Адаптивность (планшеты и ПК) */
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+    }
+    main {
+        padding: 0 2rem;
+    }
+}
