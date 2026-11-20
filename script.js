@@ -53,3 +53,15 @@ contactForm.addEventListener('submit', (event) => {
     formMessage.className = 'mt-2 fw-bold text-success';
     contactForm.reset();
 });
+// 4. Переключение тёмной темы (Практика 2, слайд 12)
+const themeBtn = document.querySelector('#theme');
+
+themeBtn.addEventListener('click', () => {
+    // Добавляем или убираем класс dark-theme у тега <body>
+    document.body.classList.toggle('dark-theme');
+    
+    // Меняем текст кнопки в зависимости от активной темы
+    const isDark = document.body.classList.contains('dark-theme');
+    themeBtn.textContent = isDark ? 'Светлая тема' : 'Тёмная тема';
+});
+
