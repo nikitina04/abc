@@ -1,3 +1,6 @@
+.d-none {
+    display: none !important;
+}
 /* 1. Сброс размеров бокса */
 * {
     box-sizing: border-box;
