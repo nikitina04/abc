@@ -146,3 +146,31 @@ body.dark-theme .form-control::placeholder {
 
 
 }
+/* Тёмная тема */
+body.dark-theme {
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+body.dark-theme h2 {
+    color: #f8fafc;
+    border-bottom-color: #334155;
+}
+
+body.dark-theme .card,
+body.dark-theme #moreText {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #f8fafc;
+}
+
+body.dark-theme .form-control {
+    background: #0f172a;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.dark-theme .form-control::placeholder {
+    color: #94a3b8;
+}
+
