@@ -173,4 +173,7 @@ body.dark-theme .form-control {
 body.dark-theme .form-control::placeholder {
     color: #94a3b8;
 }
+.d-none {
+    display: none !important;
+}
 
